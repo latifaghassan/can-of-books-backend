@@ -30,7 +30,7 @@ const userModel = mongoose.model("users", userSchema);
 // create 3 books for each user.
 const seedUserData = () => {
   const newUser = new userModel({
-    email: "tamim.hamoudi@gmail.com",
+    email: "latifaamaireh97@gmail.com",
     books: [
       {
         name: "Wuthering Heights ",
