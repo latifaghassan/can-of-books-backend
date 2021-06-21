@@ -58,4 +58,5 @@ const seedUserData = () => {
   newUser.save();
 };
 
-module.exports = seedUserData;
+seedUserData();
+module.exports = userModel;

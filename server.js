@@ -3,14 +3,12 @@
 
 const express = require("express"); // require the express package
 const app = express(); // initialize your express app instance
-const mongoose = require("mongoose");
-const getBooks = require("./controller/books.controller");
-
 require("dotenv").config();
 const PORT = process.env.PORT;
+const mongoose = require("mongoose");
 const seedUserData = require("./models/user.model");
+const getBooks = require("./controller/books.controller");
 const cors = require("cors"); // enable the communication between the frontend and the backend
-
 app.use(cors());
 
 // connect to mongo db using mongoose
@@ -23,7 +21,7 @@ mongoose.connect("mongodb://localhost:27017/myFavoriteBooks", {
 // the seed function is responsible for populating our database with data
 // invoke/ call once
 
-// seedUserData();
+
 
 /*
 -------------------------------
